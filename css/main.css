@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Overpass";
+    src: url("../assets/fonts/Overpass-Italic-VariableFont_wght.ttf");
+    src: url("../assets/fonts/Overpass-VariableFont_wght.ttf")
+    }
+
+body {
+    font-family: "Overpass";
+    width: 100%;
+    height: 100%;
+}
+
+.body-wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #131518;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 412px;
+    max-height: 416px;
+    border-radius: 30px;
+    padding: 3rem;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.ratings {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ .oval, .btn-rating {
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+    font-size: 1rem;
+    color: #979797;
+    background-color: #262E38;
+    letter-spacing: 0.25px;
+}
+
+.oval{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-rating:hover {
+    background-color: #FC7614;
+    color: #fff;
+}
+
+.selected {
+     background-color: #7C8798 !important;
+     color: #fff;
+}
+
+
+.rating-title {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.05rem;
+}
+
+.rating-subtitle {
+    color:#969FAD;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    /* word-spacing: 1px; */
+    letter-spacing: 0.75px;
+}
+
+.w-full {
+    display: block;
+    width: 100%;
+}
+
+.submit {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background-color: #FC7614;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 45px;
+    font-weight: 400;
+    
+}
+
+.submit:hover {
+    background-color: #fff;
+    color: #FC7614;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+    letter-spacing: 1px !important;
+}
+
+.rate_msg_wrapper {
+    background: #262E38;
+    border-radius: 22px;
+    padding: 0.3rem 1.3rem;
+}
+
+#rate_msg{
+    color: #FC7614;
+}
+
+.img-thank-you {
+    margin-bottom: 2rem;
+}
+
+
+/* Handle mobile stuff */
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 85%;
+        max-height: 360px;
+        border-radius: 15px;
+        padding: 24px !important;
+    }
+
+    .rating-title {
+        margin-bottom: 1rem; 
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+    }
+
+    .rating-subtitle {
+        font-size: 14px;
+    }
+
+    .img-thank-you{
+        margin-bottom: 1rem;
+    }
+  }

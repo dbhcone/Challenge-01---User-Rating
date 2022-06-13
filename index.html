@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive User Rating</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <section class="container">
+        <div class="oval">
+          <img src="assets/img/star.png" alt="Star" />
+        </div>
+
+        <h2 class="rating-title">How did we do?</h2>
+        <p class="rating-subtitle">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <section class="ratings">
+            <button
+              type="button"
+              value="1"
+              class="btn-rating"
+              onclick="selectRating(this)"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              value="2"
+              class="btn-rating"
+              onclick="selectRating(this)"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              value="3"
+              class="btn-rating"
+              onclick="selectRating(this)"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              value="4"
+              class="btn-rating"
+              onclick="selectRating(this)"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              value="5"
+              class="btn-rating"
+              onclick="selectRating(this)"
+            >
+              5
+            </button>
+          </section>
+          <button class="w-full submit" type="button" onclick="handleSubmit()">
+            Submit
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="js/index.js"></script>
